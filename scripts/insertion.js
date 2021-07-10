@@ -7,7 +7,9 @@ async function insertionSort() {
     for(let i = 1; i < ele.length; i++){
 
         console.log('In ith loop');
-        document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+        // document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+        document.querySelector('.flex-container').style.background= 'rgb(21, 24, 34)';
+
         let j=i-1;
         let key=ele[i].style.height;
         ele[i].style.background='blue'
@@ -32,7 +34,8 @@ async function insertionSort() {
                  ele[j+1].style.height=key;
                   ele[i].style.background='#88dd88';
              
-                document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+                // document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+            document.querySelector('.flex-container').style.background= 'rgb(21, 24, 34)';
                 
             }
            
@@ -55,7 +58,8 @@ async function insertionSort() {
                  ele[j+1].style.height=key;
                   ele[i].style.background='#88dd88';
              
-                document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+                // document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+            document.querySelector('.flex-container').style.background= 'rgb(21, 24, 34)';
                 
             }
             
@@ -64,7 +68,9 @@ async function insertionSort() {
       
     }
     
-    document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+    // document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+    document.querySelector('.flex-container').style.background= 'rgb(21, 24, 34)';
+
 }
 
 function displayDetails2()

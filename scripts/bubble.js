@@ -31,13 +31,16 @@ async function bubbleSort() {
             
             ele[j].style.background = 'rgb(228, 133, 17)';
             ele[j+1].style.background = 'cyan';
-            document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+            // document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+            document.querySelector('.flex-container').style.background= 'rgb(21, 24, 34)';
             
         }
         ele[ele.length-1-i].style.background = '#88dd88';
     }
     ele[0].style.background = 'green';
-    document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+    // document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+    document.querySelector('.flex-container').style.background= 'rgb(21, 24, 34)';
+
 }
 
 

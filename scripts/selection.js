@@ -14,7 +14,8 @@ async function selectionSort()
         {
            
             console.log(`in ${j} j th loop`);
-            document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+            // document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+            document.querySelector('.flex-container').style.background= 'rgb(21, 24, 34)';
  
             ele[j].style.background = 'red';
             await waitforme(delay);
@@ -60,7 +61,9 @@ async function selectionSort()
         ele[i].style.background = '#88dd88';
     }
     ele[ele.length-1].style.background = '#88dd88';
-    document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+    // document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+    document.querySelector('.flex-container').style.background= 'rgb(21, 24, 34)';
+
 }
 
 const selectionbtn=document.getElementById('selectionbtn');

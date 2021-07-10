@@ -3,7 +3,9 @@ var genarr=document.getElementById('genarr');
 var array_size=inp_arr_size.value;
 var array=[];
 var lines=document.getElementById('lines');
-
+const close=document.getElementById('close');
+const guide=document.querySelector('.guide');
+const help=document.querySelector('#help');
 inp_arr_size.addEventListener('input',upd_arraysize);
 function upd_arraysize()
 {
@@ -96,8 +98,6 @@ function disableSortingBtn(){
     document.querySelector("#ascending").disabled = true;
     document.querySelector("#descending").disabled = true;
 
-  
-
 }
 
 //enabling functions
@@ -117,7 +117,31 @@ function enableSortingBtn(){
 }
 
 
-
-
+close.addEventListener('click',()=>{
+   if(guide.style.display=="none")
+   {
     
+    console.log('none');
+    // guide.style.zIndex="0";
+   }
+   else
+   {
+    guide.style.display="none";
+    console.log('block');
+   }
+});
+
+help.addEventListener('click',()=>{
+    if(guide.style.display=="none")
+   {
+    guide.style.display="block";
+    console.log('none');
+    // guide.style.zIndex="0";
+   }
+   else
+   {
+    guide.style.display="none";
+    console.log('block');
+   }
+})   
 

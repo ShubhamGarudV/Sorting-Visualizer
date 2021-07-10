@@ -3,10 +3,13 @@ async function partition(ele, low, high){
     let i = low - 1;
     // color pivot element
     document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+    document.querySelector('.flex-container').style.background= 'rgb(21, 24, 34)';
 
     ele[high].style.background = 'red';
     for(let j = low; j <= high - 1; j++){
         document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+        document.querySelector('.flex-container').style.background= 'rgb(21, 24, 34)';
+
         console.log('In partition for j');
         // color current element
         ele[j].style.background = 'yellow';
@@ -16,6 +19,7 @@ async function partition(ele, low, high){
         {
             if(parseInt(ele[j].style.height) < parseInt(ele[high].style.height)){
                 document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+                document.querySelector('.flex-container').style.background= 'rgb(21, 24, 34)';
         
                     console.log('In partitionfor j if');
                     i++;
@@ -36,6 +40,7 @@ async function partition(ele, low, high){
         {
             if(parseInt(ele[j].style.height) > parseInt(ele[high].style.height)){
                 document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+                document.querySelector('.flex-container').style.background= 'rgb(21, 24, 34)';
         
                     console.log('In partitionfor j if');
                     i++;
@@ -54,8 +59,10 @@ async function partition(ele, low, high){
         }
     }
     document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+    document.querySelector('.flex-container').style.background= 'rgb(21, 24, 34)';
+
     i++; 
-    // pauseChamp
+    // pause
     await waitforme(delay);
     swap(ele[i], ele[high]); // pivot height one
     // console.log(`i = ${i}`, typeof(i));
@@ -69,6 +76,8 @@ async function partition(ele, low, high){
     // color
     for(let k = 0; k < ele.length; k++){
         document.querySelector('.flex-container').style.background='rgb(51, 51, 51)';
+        document.querySelector('.flex-container').style.background= 'rgb(21, 24, 34)';
+
         if(ele[k].style.background != 'green')
             ele[k].style.background = 'rgb(228, 133, 17)';
     }
